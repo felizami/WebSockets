@@ -17,6 +17,10 @@
   ],
   "dependencies": {
     "jquery": "^3.2.1",
-    "angular": "angularjs#^1.6.5"
+    "angular": "angularjs#^1.6.5",
+    "sockjs-client": "1.1.4",
+    "stomp-websocket": "2.3.4",
+    "stomp-client": "0.0.2",
+    "bootstrap": "^3.3.7"
   }
 }

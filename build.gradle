@@ -24,12 +24,22 @@ repositories {
 
 
 dependencies {
-	compile("org.springframework.boot:spring-boot-starter-web") {
-		exclude module: "spring-boot-starter-tomcat"
-	}
-	compile("org.springframework.boot:spring-boot-starter-jetty")
+	compile("org.springframework.boot:spring-boot-starter-web")
+//			{
+//		exclude module: "spring-boot-starter-tomcat"
+//	}
+
+
+	compile("org.springframework.boot:spring-boot-starter-websocket")
+//	compile("org.springframework.boot:spring-boot-starter-jetty")
 	compile("org.springframework.boot:spring-boot-starter-data-redis")
 	compile("org.springframework.boot:spring-boot-starter-actuator")
+	compile("org.springframework.boot:spring-boot-starter-tomcat")
+    compile("org.webjars:webjars-locator")
+    compile("org.webjars:sockjs-client:1.0.2")
+    compile("org.webjars:stomp-websocket:2.3.3")
+    compile("org.webjars:bootstrap:3.3.7")
+    compile("org.webjars:jquery:3.1.0")
 
 	testCompile("org.springframework.boot:spring-boot-starter-test")
 	testCompile("junit:junit")
